@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/available_coach4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="COACH Seats"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/book_button2"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/edit_round"
+            android:text="Book Selected Seats" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="Available Seats"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/buttonRed"
+            android:gravity="center"
+            android:text="Booked Seats"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/buttonGreen"
+            android:gravity="center"
+            android:text="Selected Seats"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView35"
+                        android:layout_width="199dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Entrance Door"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/button18"
+                        android:layout_width="25dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorAccent"
+                        android:text="Driver" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/twoseater_1ls"
+                        android:layout_width="15dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="1 LS" />
+
+                    <TextView
+                        android:id="@+id/textView37"
+                        android:layout_width="91dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/twoseater_2rs"
+                        android:layout_width="15dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="2 RS" />
+
+                    <Button
+                        android:id="@+id/twoseater_3rs"
+                        android:layout_width="15dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="3 RS" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/twoseater_4ls"
+                        android:layout_width="15dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="4 LS" />
+
+                    <Button
+                        android:id="@+id/twoseater_5ls"
+                        android:layout_width="15dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="5 LS" />
+
+                    <TextView
+                        android:id="@+id/textView317"
+                        android:layout_width="21dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/twoseater_6rs"
+                        android:layout_width="15dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="6 RS" />
+
+                    <Button
+                        android:id="@+id/twoseater_7rs"
+                        android:layout_width="15dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="7 RS" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/twoseater_8ls"
+                        android:layout_width="15dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="8 LS" />
+
+                    <Button
+                        android:id="@+id/twoseater_9ls"
+                        android:layout_width="15dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="9 LS" />
+
+                    <TextView
+                        android:id="@+id/textView837"
+                        android:layout_width="21dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/twoseater_10rs"
+                        android:layout_width="15dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="10 RS" />
+
+                    <Button
+                        android:id="@+id/twoseater_11rs"
+                        android:layout_width="15dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="11 RS" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/twoseater_12ls"
+                        android:layout_width="15dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="12 LS" />
+
+                    <Button
+                        android:id="@+id/twoseater_13ls"
+                        android:layout_width="15dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="13 LS" />
+
+                    <TextView
+                        android:id="@+id/textView737"
+                        android:layout_width="21dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/twoseater_14rs"
+                        android:layout_width="15dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="14 RS" />
+
+                    <Button
+                        android:id="@+id/twoseater_15rs"
+                        android:layout_width="15dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="15 RS" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/twoseater_16ls"
+                        android:layout_width="15dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="16 LS" />
+
+                    <Button
+                        android:id="@+id/twoseater_17ls"
+                        android:layout_width="15dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="17 LS" />
+
+                    <TextView
+                        android:id="@+id/textView537"
+                        android:layout_width="21dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/twoseater_18rs"
+                        android:layout_width="15dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="18 RS" />
+
+                    <Button
+                        android:id="@+id/twoseater_19rs"
+                        android:layout_width="15dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="19 RS" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/twoseater_20ls"
+                        android:layout_width="15dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="20 LS" />
+
+                    <Button
+                        android:id="@+id/twoseater_21ls"
+                        android:layout_width="15dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="21 LS" />
+
+                    <TextView
+                        android:id="@+id/textView377"
+                        android:layout_width="21dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/twoseater_22rs"
+                        android:layout_width="15dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="22 RS" />
+
+                    <Button
+                        android:id="@+id/twoseater_23rs"
+                        android:layout_width="15dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="23 RS" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/twoseater_24ls"
+                        android:layout_width="15dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="24 LS" />
+
+                    <Button
+                        android:id="@+id/twoseater_25ls"
+                        android:layout_width="15dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="25 LS" />
+
+                    <TextView
+                        android:id="@+id/textView327"
+                        android:layout_width="21dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/twoseater_26rs"
+                        android:layout_width="15dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="26 RS" />
+
+                    <Button
+                        android:id="@+id/twoseater_27rs"
+                        android:layout_width="15dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="27 RS" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/twoseater_28ls"
+                        android:layout_width="15dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="28 LS" />
+
+                    <Button
+                        android:id="@+id/twoseater_29ls"
+                        android:layout_width="15dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="29 LS" />
+
+                    <TextView
+                        android:id="@+id/textView337"
+                        android:layout_width="21dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/twoseater_30rs"
+                        android:layout_width="15dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="30 RS" />
+
+                    <Button
+                        android:id="@+id/twoseater_31rs"
+                        android:layout_width="15dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="31 RS" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/twoseater_32bs"
+                        android:layout_width="15dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="32 BS" />
+
+                    <Button
+                        android:id="@+id/twoseater_33bs"
+                        android:layout_width="15dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="33 BS" />
+
+                    <Button
+                        android:id="@+id/twoseater_34bs"
+                        android:layout_width="15dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="34 BS" />
+
+                    <Button
+                        android:id="@+id/twoseater_35rs"
+                        android:layout_width="15dp"
+                        android:layout_height="60dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="35 BS" />
+
+                    <Button
+                        android:id="@+id/twoseater_36bs"
+                        android:layout_width="15dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:text="36 BS" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

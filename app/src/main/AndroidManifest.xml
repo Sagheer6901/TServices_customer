@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tservices1">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".TServices">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity_khi_details" />
+        <activity android:name=".Activity_isl_details" />
+        <activity android:name=".Activity_lhr_details" />
+        <activity android:name=".Activity_skr_details" />
+        <activity android:name=".Activity_Selection_guest" />
+        <activity android:name=".Activity_available_car"/>
+        <activity android:name=".Activity_available_twoseater"/>
+        <activity android:name=".Activity_available_sleeper"/>
+        <activity android:name=".Activity_via_guest" />
+        <activity android:name=".Activity_car"/>
+        <activity android:name=".Activity_sleeper_coach"/>
+        <activity android:name=".Activity_twoseater_coach"/>
+        <activity android:name=".Activity_payment"/>
+        <activity android:name=".Activity_card_info"/>
+        <activity android:name=".Activity_successful"/>
+
+
+
+    </application>
+
+</manifest>

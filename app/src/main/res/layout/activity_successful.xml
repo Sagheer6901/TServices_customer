@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/departure_date1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Seat booked successfully"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="22dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:textSize="16sp"
+                tools:ignore="DuplicateIds" />
+
+            <TextView
+                android:id="@+id/textView0"
+                android:layout_width="187dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:text="GETDESTINY SERVICES"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewj"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:text="Route:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/from_to"
+                android:layout_width="187dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:text="KHI_TO_SKR"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewk"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:text="Vehicle Id:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/vehicle_id"
+                android:layout_width="187dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:text="Car_Khi_To_Skr_1"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewp"
+                android:layout_width="166dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:text="Departure Date:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/departure_date"
+                android:layout_width="187dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:text="26226256065"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/jnkjk"
+                android:layout_width="166dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:text="Departure Time:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/departure_time"
+                android:layout_width="187dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:text="26226256065"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView087"
+                android:layout_width="134dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:text="Seat No:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/seat_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:text="1"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:text="Amount:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/seat_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:text="Rs. 1200"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dfgk"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:text="Full name: "
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/fullname"
+                android:layout_width="187dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:text="lnkjn"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dfg"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:text="Booked By Mobile Number: "
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/mb_number"
+                android:layout_width="187dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:text="26226256065"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/confirm_seat"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_round"
+            android:text="Seat Again" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
